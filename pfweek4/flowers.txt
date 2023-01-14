@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+void discount(float tprice);
+main()
+{
+  int redRose;
+  int whiteRose;
+  int tulip;
+  float total;
+  cout << " Quantity of Red Roses: ";
+  cin >> redRose;
+  cout << " Quantity of White Roses: ";
+  cin >> whiteRose;
+  cout << " Quantity of Tulips: ";
+  cin >> tulip;
+  cout << endl;
+  total = (redRose * 2.00) + (whiteRose * 4.10) + (tulip * 2.50);      
+  cout << "Original Price is: " << tprice <<endl ;
+  discount(tprice); 
+
+}
+void discount(float tprice)
+{
+  if(total > 200)
+  {
+    float discountprice;
+    discount = tprice * 0.80;
+    cout << "Price after discount is: " << discountprice; 
+  }  
+} 

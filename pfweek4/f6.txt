@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+void result(int score);
+main()
+{
+ int score;
+ while (true)
+ {
+  cout<<"enter score: "
+  cin>>score;
+  result(score);
+  }
+ }
+
+void result(int score)
+{
+  if(score>50)
+   {
+    cout<<"pass";
+    }
+   if(score<50)
+   {
+    cout<<"fail";
+    }
+    if(score==50)
+   {
+    cout<<"work hard";
+    }
+}

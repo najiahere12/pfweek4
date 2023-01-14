@@ -1,0 +1,29 @@
+using namepace std;
+void calculatebill(string day,int amount);
+
+main()
+{
+
+int amount;
+string day;
+cout<<"enter amount";
+cin>>amount;
+cout<<"enter day";
+cin>>day;
+
+if(day=="sunday")
+{
+calculatebill(day,amount)
+}
+}
+
+void calculatebill(string day,int amount)
+
+{
+
+float discount;
+discount = (amount*10)/100;
+
+
+
+}

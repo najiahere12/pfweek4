@@ -1,0 +1,40 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+
+gotoxy(x,y);
+void name();
+
+main(){
+
+name();
+gotoxy(x,y);
+
+
+}
+
+void name()
+{
+  cout<<"NN       N     AAA    JJJJJ  I   AAA               "<<endl;
+  cout<<"N N      N    A   A     J    I  A   A             "<<endl;
+  cout<<"N  N     N    A   A     J    I  A   A                  "<<endl;
+  cout<<"N   N    N    AAAAA     J    I  AAAAA          "<<endl;
+  cout<<"N    N   N    A   A     J    I  A   A             "<<endl;
+  cout<<"N     N  N    A   A     J    I  A   A             "<<endl;
+  cout<<"N      N N    A   A  J  J    I  A   A                  "<<endl;
+  cout<<"N       NN    A   A  JJJJ    I  A   A                  "<<endl;
+
+}
+void gotoxy(x,y)
+{
+  COORD coordinates;
+  coordinates.X = x;
+  coordinates.Y = y;
+  SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coordinates);
+
+}
+
+
+
+
+
